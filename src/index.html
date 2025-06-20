@@ -8,28 +8,35 @@
     <title>Todo-App</title>
   </head>
   <!-- for background gradient color -->
-  <body class="h-screen w-screen bg-linear-135 from-[#153677] to-[#4e025f]">
+  <body>
     <!-- main div -->
-    <div id="container" class="mt-50 ml-130 h-70 w-110 bg-white rounded-md">
-      <h1 class="pt-7 pl-5 font-bold text-xl">To-Do List</h1>
-      <div id="input_container" class="relative pt-4 px-5">
-        <input
-          type="text"
-          id="input_box"
-          placeholder="Add your Task"
-          class="rounded-4xl w-full h-15 bg-gray-200 pl-10"
-        />
-        <button
-          class="absolute right-5 h-15 w-30 rounded-4xl bg-orange-500 text-white"
-          id="input_button"
-        >
-          Add
-        </button>
+    <div
+      class="relative h-screen w-screen bg-linear-135 from-[#153677] to-[#4e025f]"
+    >
+      <div
+        id="container"
+        class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-70 w-110 bg-white rounded-md"
+      >
+        <h1 class="pt-7 pl-5 font-bold text-xl">To-Do List</h1>
+        <div id="input_container" class="relative pt-4 px-5">
+          <input
+            type="text"
+            id="input_box"
+            placeholder="Add your Task"
+            class="rounded-4xl w-full h-15 bg-gray-200 pl-10"
+          />
+          <button
+            class="absolute right-5 h-15 w-30 rounded-4xl bg-orange-500 text-white"
+            id="input_button"
+          >
+            Add
+          </button>
+        </div>
+        <ul
+          id="list-container"
+          class="pt-5 pl-10 bg-white list-disc relative"
+        ></ul>
       </div>
-      <ul
-        id="list-container"
-        class="pt-5 pl-10 bg-white list-disc relative"
-      ></ul>
     </div>
   </body>
   <script src="./script.js"></script>
